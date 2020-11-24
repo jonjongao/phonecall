@@ -9,6 +9,8 @@ window.addEventListener("load", function () {
     width: 214,
     height: 330,
     poster: "adventure_thumbnail.jpg",
+    fluid: true,
+    aspectRatio: "9:16"
   });
 
   videojs("player").ready(function () {
