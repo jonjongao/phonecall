@@ -22,10 +22,10 @@
     <!-- End Google Tag Manager -->
     <meta charset="utf-8">
     <title>幸福金鸞逍遙遊</title>
-    <link href="https://vjs.zencdn.net/7.10.2/video-js.css" rel="stylesheet" />
+    <link href="video-js.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
     <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
-    <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+    <script src="videojs-ie8.min.js"></script>
     <script src="script.js"></script>
 </head>
 
@@ -34,8 +34,10 @@
     <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PNZK44W"
   height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
-    <video id="player" class="video-js vjs-default-skin vjs-big-play-centered vjs-fluid">
+    <div class="container">
+        <video id="player" class="video-js vjs-default-skin vjs-big-play-centered vjs-fill" width="100%" height="100%" controls preload="none" poster="adventure_thumbnail.jpg" autoplay>
     <source src="adventure.mp4" type="video/mp4" />
+    <source src="call_test.mp4" type="video/mp4" />
     <p class="vjs-no-js">
         To view this video please enable JavaScript, and consider upgrading to a
         web browser that
@@ -44,8 +46,9 @@
         >
       </p>
   </video>
+    </div>
 
-    <script src="https://vjs.zencdn.net/7.10.2/video.js"></script>
+    <script src="video.js"></script>
 </body>
 
 </html>
