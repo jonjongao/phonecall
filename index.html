@@ -1,32 +1,52 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-6TL1SBTY5K"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-<head>
-    <meta charset="utf-8">
+      gtag("config", "G-6TL1SBTY5K");
+    </script>
+    <meta charset="utf-8" />
     <title>幸福金鸞逍遙遊</title>
     <link href="video-js.css" rel="stylesheet" />
     <link href="style.css" rel="stylesheet" />
     <!-- If you'd like to support IE8 (for Video.js versions prior to v7) -->
     <script src="videojs-ie8.min.js"></script>
-    <script src="script.js"></script>
-</head>
+    <script src="mscript.js"></script>
+  </head>
 
-<body>
+  <body>
     <div class="container">
-        <video id="player" class="video-js vjs-default-skin vjs-big-play-centered vjs-fill" width="100%" height="100%" controls preload="none" poster="adventure_thumbnail.jpg" autoplay>
-    <source src="adventure.mp4" type="video/mp4" />
-    <source src="call_test.mp4" type="video/mp4" />
-    <p class="vjs-no-js">
-        To view this video please enable JavaScript, and consider upgrading to a
-        web browser that
-        <a href="https://videojs.com/html5-video-support/" target="_blank"
-          >supports HTML5 video</a
-        >
-      </p>
-  </video>
+      <video
+        id="player"
+        class="video-js vjs-default-skin vjs-big-play-centered vjs-fill"
+        controls
+        preload="auto"
+        width="100%"
+        height="100%"
+        poster="adventure_thumbnail.jpg"
+        data-setup="{}"
+      >
+        <source src="adventure.mp4" type="video/mp4" />
+        <source src="call_test.mp4" type="video/mp4" />
+        <p class="vjs-no-js">
+          您需要啟用JavaScript以觀看此內容，建議您更新成
+          <a href="https://videojs.com/html5-video-support/" target="_blank"
+            >支援HTML5影片的網頁瀏覽器</a
+          >
+        </p>
+      </video>
     </div>
 
     <script src="video.js"></script>
-</body>
-
+  </body>
 </html>
